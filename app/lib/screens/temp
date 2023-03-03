@@ -1,0 +1,30 @@
+
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: TextField(
+                      onChanged: (value) => updatelist(value),
+                      style: const TextStyle(color: Colors.green),
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: const Color.fromARGB(255, 253, 253, 253),
+                        border: OutlineInputBorder(
+                          borderSide: const BorderSide(
+                              width: 3, color: Colors.transparent),
+                          borderRadius: BorderRadius.circular(30.0),
+                        ),
+                        hintStyle: const TextStyle(color: Colors.green),
+                        hintText: "Search report",
+                        prefixIcon: const Icon(Icons.search),
+                        focusColor: Colors.greenAccent,
+                      ),
+                    ),
+                  ),
+
+
+Icon(
+                              display_list[index].disease == "Healthy"
+                                  ? Icons.safety_check
+                                  : Icons.warning,
+                              color: display_list[index].disease == "Healthy"
+                                  ? Colors.green
+                                  : Colors.red,
